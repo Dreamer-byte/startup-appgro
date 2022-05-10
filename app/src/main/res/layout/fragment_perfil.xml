@@ -1,63 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PerfilFragment">
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/civProfile"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/profile_picture"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/tvName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/juana_p_rez"
-        android:fontFamily="@font/cera_pro_bold"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/civProfile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_height="match_parent"
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout_perfil"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_marginTop="15dp"
-        android:background="@android:color/transparent"
-        app:tabGravity="fill"
-        app:tabIndicatorAnimationDuration="@integer/config_navAnimTime"
-        app:tabIndicatorAnimationMode="elastic"
-        app:tabIndicatorColor="#10BC69"
-        app:tabIndicatorGravity="bottom"
-        app:tabSelectedTextColor="#10BC69"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvName"/>
+        tools:context=".PerfilFragment">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/pager_perfil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:isScrollContainer="true"
-        android:orientation="horizontal"
-        android:overScrollMode="always"
-        android:scrollbars="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tab_layout_perfil" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/profile_picture"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/juana_p_rez"
+            android:fontFamily="@font/cera_pro_bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/civProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_perfil"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            app:tabGravity="fill"
+            app:tabIndicatorAnimationDuration="@integer/config_navAnimTime"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="#10BC69"
+            app:tabIndicatorGravity="bottom"
+            app:tabSelectedTextColor="#10BC69"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="horizontal"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout_perfil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
