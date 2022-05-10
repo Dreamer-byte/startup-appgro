@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/bottom_nav_color.xml" value="0.197" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/button_shadow_animal.xml" value="0.2075" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/drawable_bottom_animal.xml" value="0.2185" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/drawable_bottom_plant.xml" value="0.2185" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/shadow_button.xml" value="0.2065" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/shadow_input.xml" value="0.2065" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/shape_background.xml" value="0.2085" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/shape_item_drawer.xml" value="0.3345" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/shape_photo.xml" value="0.194" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/shape_reward.xml" value="0.2085" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/drawable/splash_drawable.xml" value="0.129" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_add_mascota.xml" value="0.22" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_alimentacion.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_drawer.xml" value="0.23526745240253852" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_drawer2.xml" value="0.3180846515604959" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_home_animal.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_main.xml" value="0.3875" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_presentation.xml" value="0.33" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_presentation_animal.xml" value="0.33" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_splash.xml" value="0.3875" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_starting.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/activity_warning.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/app_bar_drawer.xml" value="0.3180846515604959" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/content_drawer.xml" value="0.23526745240253852" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/content_main.xml" value="0.1717896174863388" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_alimentacion_mascota.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_all_plant.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_community.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_community_animal.xml" value="0.12325812873258128" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_exteriors.xml" value="0.20116120218579234" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_gallery.xml" value="0.3180846515604959" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_garden.xml" value="0.20116120218579234" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_interiors.xml" value="0.20116120218579234" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_perfil.xml" value="0.25135135135135134" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_perfil_mascota.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_profile_animal.xml" value="0.12325812873258128" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_scanner.xml" value="0.33" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_slideshow.xml" value="0.3180846515604959" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_start.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/fragment_start_animal.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/item_post_community.xml" value="0.3180846515604959" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/item_presentation.xml" value="0.25" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/item_presentation_animal.xml" value="0.1" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/nav_header_drawer.xml" value="0.3180846515604959" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/layout/warning_message.xml" value="0.12325812873258128" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/menu-v26/activity_main_drawer.xml" value="0.3875" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/menu/activity_drawer_drawer.xml" value="0.3180846515604959" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/menu/activity_main_drawer.xml" value="0.67" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/menu/bottom_navigation_animal.xml" value="0.25101351351351353" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.22" />
+        <entry key="..\:/Users/Jackson/StudioProjects/StartUpAppGro/app/src/main/res/menu/main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

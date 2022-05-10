@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#F2F8F8"
+        tools:context=".StartFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSaludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cera_pro_bold"
+            android:text="@string/hola"
+            android:textColor="#3F6953"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/svSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/buscar_en_appgro"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/search"
+            app:iconTint="#3F6953"
+            app:iconSize="16dp"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSaludo"/>
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/svSearch"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            -->
+<!--            app:queryHint="Buscar en APPGRO"-->
+<!--            app:searchHintIcon="@drawable/search"-->
+<!--            app:searchIcon="@drawable/search" />-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCultivos"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toStartOf="@id/cardPlagasEnfermedades"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/svSearch">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plnata" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/cera_pro_bold"
+                    android:text="@string/mis_cultivos"
+                    android:textAlignment="center"
+                    android:textColor="#3F6953"
+                    android:textSize="15sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPlagasEnfermedades"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toStartOf="@id/cardConsejos"
+            app:layout_constraintStart_toEndOf="@id/cardCultivos"
+            app:layout_constraintTop_toBottomOf="@id/svSearch">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plagas" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/cera_pro_bold"
+                    android:text="@string/plagas_y_enfermedades"
+                    android:textAlignment="center"
+                    android:textColor="#3F6953"
+                    android:textSize="15sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardConsejos"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardPlagasEnfermedades"
+            app:layout_constraintTop_toBottomOf="@id/svSearch">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/consejos" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/cera_pro_bold"
+                    android:text="@string/consejos_de_siembra"
+                    android:textAlignment="center"
+                    android:textColor="#3F6953"
+                    android:textSize="15sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shadow_button"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardPlagasEnfermedades">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/upload" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/cera_pro_bold"
+                android:text="@string/subir_imagen"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNewPlant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/cera_pro_bold"
+            android:text="@string/descubre_nuevas_plantas"
+            android:textColor="#353535"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnUploadImage" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNewPlant"
+            app:tabGravity="fill"
+            app:tabIndicatorAnimationDuration="@integer/config_navAnimTime"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="#10BC69"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorGravity="bottom"
+            app:tabSelectedTextColor="#10BC69" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:isScrollContainer="true"
+            android:orientation="horizontal"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

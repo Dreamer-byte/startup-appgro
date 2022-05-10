@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:enabled="true"
+        android:id="@+id/startAnimalFragment"
+        android:icon="@drawable/house"
+        android:title="@string/inicio"/>
+    <item
+        android:id="@+id/communityAnimalFragment"
+        android:icon="@drawable/users"
+        android:enabled="true"
+        android:title="@string/comunidad"/>
+    <item
+        android:id="@+id/profileAnimalFragment"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="@string/perfil"/>
+</menu>

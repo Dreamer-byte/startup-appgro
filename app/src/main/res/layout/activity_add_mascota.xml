@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".animal.AddMascotaActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBackAddMascota"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/backspace"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvMascotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cera_pro_medium"
+            android:text="@string/mis_mascotas"
+            android:textColor="#252525"
+            android:layout_marginEnd="15dp"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/mascota"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/tvMascotas"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/add"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@id/ivAvatar"
+            app:layout_constraintTop_toBottomOf="@id/tvMascotas"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            app:tabGravity="fill"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="#6C63FF"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="bottom"
+            app:tabSelectedTextColor="#191919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pager_perfil"
+            app:layout_constraintTop_toBottomOf="@id/ivAvatar"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:isScrollContainer="true"
+            android:orientation="horizontal"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout_perfil" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

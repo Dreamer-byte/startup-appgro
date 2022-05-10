@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#F2F8F8"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_vertical"
+        android:background="#F2F8F8"
+        tools:context=".ScannerFragment">
+
+        <TextView android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/captura_una_fotograf_a_de_la_parte_afectada_de_la_planta"
+            android:fontFamily="@font/cera_pro_bold"
+            android:textSize="18sp"
+            android:elegantTextHeight="true"
+            android:layout_marginTop="18dp"
+            android:textAlignment="center"
+            android:textColor="#232323"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivPhotography"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/plant_icon"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:layout_marginTop="30dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintTop_toBottomOf="@id/ivPhotography">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+                <TextView android:id="@+id/tvInstruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#1B1B1B"
+                    android:fontFamily="@font/cera_pro_medium"
+                    android:text="@string/sane_su_cultivo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivInstructionScan"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    android:src="@drawable/scan"
+                    app:layout_constraintEnd_toStartOf="@id/ivRight1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvInstruction"/>
+
+                <TextView
+                    android:id="@+id/tvTomarFoto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cera_pro_light"
+                    android:text="@string/tomar_foto"
+                    android:textStyle="bold"
+                    android:textColor="#2C2C2C"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/tvInformation"
+                    app:layout_constraintEnd_toEndOf="@id/ivInstructionScan"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="@id/ivInstructionScan"
+                    app:layout_constraintTop_toBottomOf="@id/ivPhone"
+                    app:layout_constraintVertical_bias="0.285" />
+
+                <TextView android:id="@+id/tvDiagnostico"
+                    android:layout_width="0dp"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ver_diagn_stico"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#2C2C2C"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cera_pro_light"
+                    app:layout_constraintBottom_toTopOf="@id/tvInformation"
+                    app:layout_constraintEnd_toEndOf="@id/ivPhone"
+                    app:layout_constraintTop_toBottomOf="@id/ivPhone"
+                    app:layout_constraintStart_toStartOf="@id/ivPhone" />
+
+                <TextView android:id="@+id/tvMedicine"
+                    android:layout_width="0dp"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    android:layout_height="wrap_content"
+                    android:text="@string/obtener_el_tratamiento"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/cera_pro_light"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textColor="#2C2C2C"
+                    app:layout_constraintBottom_toTopOf="@id/tvInformation"
+
+                    app:layout_constraintEnd_toEndOf="@id/ivMedicine"
+                    app:layout_constraintTop_toBottomOf="@id/ivPhone"
+                    app:layout_constraintStart_toStartOf="@id/ivMedicine" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivRight1"
+                    android:layout_width="0dp"
+                    android:backgroundTint="@color/purple_700"
+                    android:layout_height="25dp"
+                    android:src="@drawable/right"
+                    app:layout_constraintStart_toEndOf="@id/ivInstructionScan"
+                    app:layout_constraintTop_toTopOf="@id/ivInstructionScan"
+                    app:layout_constraintBottom_toBottomOf="@id/ivInstructionScan"
+                    app:layout_constraintEnd_toStartOf="@id/ivPhone"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/phone"
+                    app:layout_constraintEnd_toStartOf="@id/ivRight2"
+                    app:layout_constraintTop_toBottomOf="@id/tvInstruction"
+                    app:layout_constraintStart_toEndOf="@id/ivRight1"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivRight2"
+                    android:layout_width="0dp"
+                    android:backgroundTint="@color/purple_700"
+                    android:layout_height="25dp"
+                    android:src="@drawable/right"
+                    app:layout_constraintEnd_toStartOf="@id/ivMedicine"
+                    app:layout_constraintStart_toEndOf="@id/ivPhone"
+                    app:layout_constraintTop_toTopOf="@id/ivPhone"
+                    app:layout_constraintBottom_toBottomOf="@id/ivPhone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivMedicine"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/medicine"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvInstruction"
+                    app:layout_constraintStart_toEndOf="@id/ivRight2"/>
+
+                <TextView android:id="@+id/tvInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:text="@string/nota_trate_de_que_la_fotograf_a_tomada_no_sea_borrosa_ya_que_afectar_en_la_detecci_n_de_la_enfermedad"
+                    android:fontFamily="@font/cera_pro_regular_italic"
+                    android:textColor="#FFC400"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            style="@style/ButtonShape"
+            android:fontFamily="@font/cera_pro_bold"
+            android:text="@string/capturar_fotograf_a"
+            app:layout_constraintTop_toBottomOf="@id/cardInstruction"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
