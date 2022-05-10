@@ -49,6 +49,17 @@ class CommunityFragment : Fragment() {
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.nestedScroll.setOnScrollChangeListener { _, _, scrollY, _, oldScrollY ->
+            if (scrollY > oldScrollY + 12 && binding.btnPost.isExtended) {
+                binding.btnPost.shrink();
+            }
+            if (scrollY < oldScrollY - 12 && !binding.btnPost.isExtended) {
+                binding.btnPost.extend();
+            }
+            if (scrollY == 0) {
+                binding.btnPost.extend();
+            }
+        }
 
     }
 
