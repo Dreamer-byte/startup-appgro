@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.startupappgro.R
 import com.example.startupappgro.adapter.FragmentMascotaAdapter
+import com.example.startupappgro.adapter.FragmentProfileAdapter
 import com.example.startupappgro.databinding.FragmentPerfilBinding
 import com.example.startupappgro.databinding.FragmentScannerBinding
 import com.google.android.material.snackbar.Snackbar
@@ -53,7 +54,7 @@ class PerfilFragment : Fragment() {
     }
 
     private fun initPager() {
-        val adapter = FragmentMascotaAdapter(fragmentManager = this.childFragmentManager, lifecycle = lifecycle)
+        val adapter = FragmentProfileAdapter(fragmentManager = this.childFragmentManager, lifecycle = lifecycle)
         binding.pagerPerfil.adapter = adapter
         TabLayoutMediator(binding.tabLayoutPerfil, binding.pagerPerfil
         ) { tab, position ->

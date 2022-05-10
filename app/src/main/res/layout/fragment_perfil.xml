@@ -33,16 +33,16 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout_perfil"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:layout_marginTop="15dp"
         android:background="@android:color/transparent"
         app:tabGravity="fill"
+        app:tabIndicatorAnimationDuration="@integer/config_navAnimTime"
         app:tabIndicatorAnimationMode="elastic"
-        app:tabIndicatorColor="#6C63FF"
-        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorColor="#10BC69"
         app:tabIndicatorGravity="bottom"
-        app:tabSelectedTextColor="#191919"
+        app:tabSelectedTextColor="#10BC69"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvName"/>
