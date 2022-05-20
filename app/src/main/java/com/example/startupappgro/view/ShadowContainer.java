@@ -35,7 +35,7 @@ public class ShadowContainer extends ViewGroup {
     public ShadowContainer(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ShadowContainer);
-        int shadowColor = a.getColor(R.styleable.ShadowContainer_containerShadowColor, Color.RED);
+        int shadowColor = a.getColor(R.styleable.ShadowContainer_containerShadowColor, Color.GREEN);
 //      int shadowColor = Color.RED;
         float shadowRadius = a.getDimension(R.styleable.ShadowContainer_containerShadowRadius, 0);
         deltaLength = a.getDimension(R.styleable.ShadowContainer_containerDeltaLength, 0);

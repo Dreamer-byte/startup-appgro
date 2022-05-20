@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "408858739429",
+    "project_id": "quantum-a2454",
+    "storage_bucket": "quantum-a2454.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408858739429:android:eb4eb710c93cec94d4ca0c",
+        "android_client_info": {
+          "package_name": "com.example.startupappgro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408858739429-gmquh2d7hsjvpuj4d3nfbek8cgt4vv9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2xmETO8T4Tav_XTTZXIrAT8C4_KHcVQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408858739429-gmquh2d7hsjvpuj4d3nfbek8cgt4vv9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
