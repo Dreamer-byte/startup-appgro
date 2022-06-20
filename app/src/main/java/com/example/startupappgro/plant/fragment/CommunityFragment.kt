@@ -8,8 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.startupappgro.R
+import com.example.startupappgro.adapter.AdapterPostCommunity
 import com.example.startupappgro.databinding.FragmentCommunityBinding
+import com.example.startupappgro.model.ModelPostCommunity
+import com.example.startupappgro.provider.ProviderPostCommunity
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 
@@ -60,7 +64,19 @@ class CommunityFragment : Fragment() {
                 binding.btnPost.extend();
             }
         }
+        initRecyclerView()
+    }
 
+    private fun initRecyclerView() {
+        val recycler = binding.rvPostCommunity
+        recycler.layoutManager = LinearLayoutManager(context)
+        recycler.adapter = AdapterPostCommunity(ProviderPostCommunity.postCommunityList){ post ->
+            onItemSelected(post)
+        }
+    }
+
+    private fun onItemSelected(post: ModelPostCommunity) {
+        Snackbar.make(binding.btnPost, "Funcionalidad en desarrollo", Snackbar.LENGTH_SHORT).show()
     }
 
     companion object {

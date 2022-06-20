@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cera_pro_medium"
+        android:text="@string/appgro"
+        android:textColor="@color/plant"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/cera_pro_bold"
+        android:text="@string/ricardo_dos_santos"
+        android:textColor="#202020"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/ivAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cera_pro_bold"
+        android:text="@string/hace_15_min"
+        app:layout_constraintStart_toEndOf="@id/ivAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/options"
+        android:layout_width="30dp"
+        android:layout_height="25sp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/opciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cera_pro_medium"
+        android:text="@string/la_cuenta_regresiva_del_reloj_clim_tico_ha_iniciado"
+        android:textAlignment="textStart"
+        android:textColor="#232323"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivAvatar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPost"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/relog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        app:boxBackgroundMode="none"
+        app:boxStrokeColor="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@id/ivReaction"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPost">
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/jardineria"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/cera_pro_medium"
+            android:hint="@string/agregar_un_comentario"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivReaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/heart"
+        app:layout_constraintBaseline_toBaselineOf="@id/tilComment"
+        app:layout_constraintEnd_toStartOf="@id/tvNumReaction"
+        app:layout_constraintStart_toEndOf="@id/tilComment"
+        app:layout_constraintTop_toBottomOf="@id/ivPost"
+        app:layout_marginBaseline="5dp" />
+
+    <TextView
+        android:id="@+id/tvNumReaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/_2_3k"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tilComment"
+        app:layout_constraintStart_toEndOf="@id/ivReaction"
+        app:layout_constraintTop_toBottomOf="@id/ivPost" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/comment"
+        app:layout_constraintBaseline_toBaselineOf="@id/tilComment"
+        app:layout_constraintStart_toEndOf="@id/tvNumReaction"
+        app:layout_constraintTop_toBottomOf="@id/ivPost"
+        app:layout_marginBaseline="6dp" />
+
+    <TextView
+        android:id="@+id/tvNumComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/_234"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tilComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivComment"
+        app:layout_constraintTop_toBottomOf="@id/ivPost" />
+</androidx.constraintlayout.widget.ConstraintLayout>
