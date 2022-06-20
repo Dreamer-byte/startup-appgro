@@ -3,18 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp">
-
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/cera_pro_medium"
-        android:text="@string/appgro"
-        android:textColor="@color/plant"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_margin="10dp"
+    android:background="@drawable/ripple_drawable"
+    android:clickable="true"
+    android:focusable="true">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ivAvatar"
@@ -23,20 +15,19 @@
         android:layout_marginTop="30dp"
         android:src="@drawable/img"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
         android:fontFamily="@font/cera_pro_bold"
         android:text="@string/ricardo_dos_santos"
         android:textColor="#202020"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/ivAvatar"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+        app:layout_constraintTop_toTopOf="@id/ivAvatar" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvConnected"
@@ -53,10 +44,9 @@
         android:id="@+id/options"
         android:layout_width="30dp"
         android:layout_height="25sp"
-        android:layout_marginTop="30dp"
         android:src="@drawable/opciones"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+        app:layout_constraintTop_toTopOf="@id/ivAvatar" />
 
     <TextView
         android:id="@+id/tvDescription"
