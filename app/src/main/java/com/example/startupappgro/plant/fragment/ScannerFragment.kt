@@ -16,6 +16,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
+import com.example.startupappgro.CameraAnimalActivity
 import com.example.startupappgro.R
 import com.example.startupappgro.databinding.FragmentScannerBinding
 
@@ -61,7 +62,7 @@ class ScannerFragment : Fragment() {
 
     private fun setupListener() {
         binding.btnTakePhoto.setOnClickListener {
-            enableOpenCamera()
+            startActivity(Intent(context, CameraAnimalActivity::class.java))
         }
     }
 

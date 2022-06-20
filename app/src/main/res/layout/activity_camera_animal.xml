@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cameraContainer"
+    android:background="@color/black"
+    tools:context=".CameraAnimalActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="25dp"
+        android:scaleType="centerCrop"
+        android:padding="6dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/shape_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/arrow_left"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_predicted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/camera_capture_button"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/ic_shutter"
+        app:layout_constraintStart_toEndOf="@id/goGallery"
+        app:layout_constraintEnd_toStartOf="@id/flash"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/goGallery"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_photo_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/camera_capture_button"
+        app:layout_constraintBottom_toBottomOf="@id/camera_capture_button"
+        app:layout_constraintEnd_toStartOf="@id/camera_capture_button"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/flash"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_flash_on_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/camera_capture_button"
+        app:layout_constraintBottom_toBottomOf="@id/camera_capture_button"
+        app:layout_constraintStart_toEndOf="@id/camera_capture_button"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

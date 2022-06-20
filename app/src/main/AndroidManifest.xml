@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StartUpAppGro">
         <activity
+            android:name=".CameraAnimalActivity"
+            android:exported="false" />
+        <activity
             android:name=".DrawerActivity"
             android:exported="false"
             android:label="@string/title_activity_drawer"
