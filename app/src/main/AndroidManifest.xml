@@ -17,15 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StartUpAppGro">
         <activity
-            android:name=".CameraAnimalActivity"
+            android:name=".animal.CameraAnimalActivity"
             android:exported="false" />
         <activity
-            android:name=".DrawerActivity"
+            android:name=".ui.DrawerActivity"
             android:exported="false"
             android:label="@string/title_activity_drawer"
             android:theme="@style/Theme.StartUpAppGro.NoActionBar" />
         <activity
-            android:name=".WarningActivity"
+            android:name=".ui.WarningActivity"
             android:exported="false" />
         <activity
             android:name=".animal.AlimentacionActivity"

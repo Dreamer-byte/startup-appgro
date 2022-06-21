@@ -1,11 +1,9 @@
-package com.example.startupappgro
+package com.example.startupappgro.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import com.example.startupappgro.databinding.ActivityWarningBinding
-import com.example.startupappgro.ui.LoginActivity
 
 class WarningActivity : AppCompatActivity() {
     lateinit var binding: ActivityWarningBinding

@@ -1,7 +1,6 @@
 package com.example.startupappgro.plant.fragment
 
 import android.Manifest
-import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -15,9 +14,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.os.bundleOf
-import com.example.startupappgro.CameraAnimalActivity
-import com.example.startupappgro.R
+import com.example.startupappgro.animal.CameraAnimalActivity
 import com.example.startupappgro.databinding.FragmentScannerBinding
 
 // TODO: Rename parameter arguments, choose names that match
