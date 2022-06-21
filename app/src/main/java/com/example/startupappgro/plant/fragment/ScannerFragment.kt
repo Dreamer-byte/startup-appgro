@@ -14,7 +14,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.startupappgro.animal.CameraAnimalActivity
+import com.example.startupappgro.animal.camera.CameraAnimalActivity
 import com.example.startupappgro.databinding.FragmentScannerBinding
 
 // TODO: Rename parameter arguments, choose names that match

@@ -1,4 +1,4 @@
-package com.example.startupappgro.animal
+package com.example.startupappgro.animal.camera
 
 import android.content.ContentValues
 import android.content.ContentValues.TAG
@@ -8,16 +8,14 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
-import androidx.camera.core.CameraSelector
-import androidx.camera.core.ImageCapture
-import androidx.camera.core.ImageCaptureException
-import androidx.camera.core.Preview
+import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import com.example.startupappgro.databinding.ActivityCameraAnimalBinding
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 
 class CameraAnimalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCameraAnimalBinding
@@ -37,6 +35,7 @@ class CameraAnimalActivity : AppCompatActivity() {
         binding.cameraCaptureButton.setOnClickListener {
             takePhoto()
         }
+        cameraExecutor = Executors.newSingleThreadExecutor()
     }
 
     private fun startCamera() {
@@ -51,6 +50,13 @@ class CameraAnimalActivity : AppCompatActivity() {
                     it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
                 }
             imageCapture = ImageCapture.Builder().build()
+            val imageAnalyzer = ImageAnalysis.Builder()
+                .build()
+                .also {
+                    it.setAnalyzer(cameraExecutor, LuminosityAnalyzer { luma ->
+                        Log.d(TAG, "Average luminosity: $luma")
+                    })
+                }
             // Select back camera as a default
             val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
             try {
@@ -60,8 +66,7 @@ class CameraAnimalActivity : AppCompatActivity() {
                 // Bind use cases to camera
                 // Bind use cases to camera
                 cameraProvider.bindToLifecycle(
-                    this, cameraSelector, preview, imageCapture)
-
+                    this, cameraSelector, preview, imageCapture, imageAnalyzer)
             } catch(exc: Exception) {
                 Log.e(TAG, "Use case binding failed", exc)
             }
