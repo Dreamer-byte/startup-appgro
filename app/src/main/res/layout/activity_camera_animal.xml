@@ -83,7 +83,7 @@
         app:layout_constraintBottom_toTopOf="@id/camera_capture_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
-    <androidx.appcompat.widget.AppCompatImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/camera_capture_button"
         android:layout_width="92dp"
         android:layout_height="92dp"

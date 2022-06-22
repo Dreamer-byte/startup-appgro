@@ -1,19 +1,28 @@
 package com.example.startupappgro.animal.camera
 
+
 import android.content.ContentValues
 import android.content.ContentValues.TAG
+import android.graphics.Bitmap
+import android.graphics.Matrix
+import android.graphics.drawable.Drawable
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.View
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatButton
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.example.startupappgro.databinding.ActivityCameraAnimalBinding
+import com.google.android.material.button.MaterialButton
 import java.text.SimpleDateFormat
 import java.util.*
+import com.example.startupappgro.R
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -21,6 +30,9 @@ class CameraAnimalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCameraAnimalBinding
     private var imageCapture: ImageCapture? = null
     private lateinit var cameraExecutor: ExecutorService
+    private var pauseAnalysis = false
+    private lateinit var bitmapBuffer: Bitmap
+    private var imageRotationDegrees: Int = 0
     companion object{
         private const val FILENAME_FORMAT = "dd/MM/yyy/"
     }
@@ -34,8 +46,57 @@ class CameraAnimalActivity : AppCompatActivity() {
         }
         binding.cameraCaptureButton.setOnClickListener {
             takePhoto()
+            binding.cameraCaptureButton.setShowProgress(true, null)
+            it.isEnabled = false
+            if (!pauseAnalysis){
+                pauseAnalysis = true
+                val matrix = Matrix().apply {
+                    postRotate(imageRotationDegrees.toFloat())
+                }
+                val uprightImage = Bitmap.createBitmap(
+                    bitmapBuffer, 0, 0, bitmapBuffer.width, bitmapBuffer.height, matrix, true
+                )
+                binding.imagePredicted.setImageBitmap(uprightImage)
+                binding.imagePredicted.visibility = View.VISIBLE
+            }
+            it.isEnabled = true
         }
         cameraExecutor = Executors.newSingleThreadExecutor()
+    }
+
+    fun MaterialButton.setShowProgress(
+        showProgress: Boolean?,
+        textSource: String?
+    ){
+        iconGravity = MaterialButton.ICON_GRAVITY_TEXT_START
+        isClickable = showProgress == false
+        text = if (showProgress == true) "" else textSource
+        icon = if (showProgress == true){
+            CircularProgressDrawable(context).apply {
+                setStyle(CircularProgressDrawable.LARGE)
+                setColorSchemeColors(ContextCompat.getColor(
+                    context, R.color.white))
+                start()
+            }
+        } else {
+            getDrawable(R.drawable.ic_round_check_circle_24)
+        }
+        icon?.let {
+            icon.callback = object : Drawable.Callback{
+                override fun invalidateDrawable(who: Drawable) {
+                    this@setShowProgress.invalidate()
+                }
+
+                override fun scheduleDrawable(who: Drawable, what: Runnable, `when`: Long) {
+                    TODO("Not yet implemented")
+                }
+
+                override fun unscheduleDrawable(who: Drawable, what: Runnable) {
+                    TODO("Not yet implemented")
+                }
+
+            }
+        }
     }
 
     private fun startCamera() {
@@ -45,18 +106,37 @@ class CameraAnimalActivity : AppCompatActivity() {
             val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
             // Preview
             val preview = Preview.Builder()
+                .setTargetAspectRatio(AspectRatio.RATIO_4_3)
+                .setTargetRotation(binding.viewFinder.display.rotation)
                 .build()
                 .also {
                     it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
                 }
             imageCapture = ImageCapture.Builder().build()
             val imageAnalyzer = ImageAnalysis.Builder()
+                .setTargetAspectRatio(AspectRatio.RATIO_4_3)
+                .setTargetRotation(binding.viewFinder.display.rotation)
+                .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+                .setOutputImageFormat(ImageAnalysis.OUTPUT_IMAGE_FORMAT_RGBA_8888)
                 .build()
                 .also {
                     it.setAnalyzer(cameraExecutor, LuminosityAnalyzer { luma ->
                         Log.d(TAG, "Average luminosity: $luma")
                     })
                 }
+            imageAnalyzer.setAnalyzer(cameraExecutor, ImageAnalysis.Analyzer { image ->
+                if(!::bitmapBuffer.isInitialized){
+                    imageRotationDegrees = image.imageInfo.rotationDegrees
+                    bitmapBuffer = Bitmap.createBitmap(
+                        image.width, image.height, Bitmap.Config.ARGB_8888
+                    )
+                    if(pauseAnalysis){
+                        image.close()
+                        return@Analyzer
+                    }
+                    image.use { bitmapBuffer.copyPixelsFromBuffer(image.planes[0].buffer) }
+                }
+            })
             // Select back camera as a default
             val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
             try {
@@ -108,6 +188,8 @@ class CameraAnimalActivity : AppCompatActivity() {
                     val msg = "Photo capture succeeded: ${output.savedUri}"
                     Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
                     Log.d(TAG, msg)
+                    binding.cameraCaptureButton.setShowProgress(false, null)
+
                 }
             }
         )
