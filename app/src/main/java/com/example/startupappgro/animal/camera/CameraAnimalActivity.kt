@@ -16,25 +16,33 @@ import android.util.Log
 import android.util.Size
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
+import android.widget.AdapterView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.camera.core.*
 import androidx.camera.extensions.internal.sessionprocessor.ImageProcessor
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.example.startupappgro.databinding.ActivityCameraAnimalBinding
 import com.google.android.material.button.MaterialButton
 import java.text.SimpleDateFormat
 import java.util.*
 import com.example.startupappgro.R
+import com.example.startupappgro.adapter.AdapterPreviewDiagnostic
+import com.example.startupappgro.model.ModelPreviewDiagnostic
+import com.example.startupappgro.provider.ProviderPreviewDiagnostic
 import com.google.android.material.resources.TextAppearance
+import com.google.android.material.snackbar.Snackbar
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import kotlin.math.min
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.Interpreter
 import org.tensorflow.lite.nnapi.NnApiDelegate
+import java.util.concurrent.TimeUnit
 
 class CameraAnimalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCameraAnimalBinding
@@ -79,6 +87,18 @@ class CameraAnimalActivity : AppCompatActivity() {
             it.isEnabled = true
         }
         cameraExecutor = Executors.newSingleThreadExecutor()
+    }
+
+    private fun initAdapter() {
+        val recycler = binding.rvPreviewDiagnostic
+        recycler.layoutManager = LinearLayoutManager(this)
+        recycler.adapter = AdapterPreviewDiagnostic(ProviderPreviewDiagnostic.previewDiagnosticList){
+            onItemSelected(it)
+        }
+    }
+
+    private fun onItemSelected(it: ModelPreviewDiagnostic) {
+        Snackbar.make(binding.btnBack, "Funcionalidad en desarrollo", Snackbar.LENGTH_SHORT).show()
     }
 
     fun MaterialButton.setShowProgress(
@@ -208,7 +228,8 @@ class CameraAnimalActivity : AppCompatActivity() {
                     Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
                     Log.d(TAG, msg)
                     binding.cameraCaptureButton.setShowProgress(false, null)
-
+                    initAdapter()
+                    binding.viewPartial.bringToFront()
                 }
             }
         )
@@ -223,6 +244,10 @@ class CameraAnimalActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        cameraExecutor.apply {
+            shutdown()
+            awaitTermination(1000, TimeUnit.MILLISECONDS)
+        }
         super.onDestroy()
     }
 
