@@ -85,9 +85,10 @@
         app:layout_constraintStart_toStartOf="parent"/>
     <com.google.android.material.button.MaterialButton
         android:id="@+id/camera_capture_button"
-        android:layout_width="92dp"
-        android:layout_height="92dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="40dp"
+
         android:scaleType="fitCenter"
         android:background="@drawable/ic_shutter"
         app:layout_constraintStart_toEndOf="@id/goGallery"

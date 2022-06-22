@@ -5,16 +5,21 @@ import android.content.ContentValues
 import android.content.ContentValues.TAG
 import android.graphics.Bitmap
 import android.graphics.Matrix
+import android.graphics.Paint
 import android.graphics.drawable.Drawable
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.text.Layout
 import android.util.Log
+import android.util.Size
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.camera.core.*
+import androidx.camera.extensions.internal.sessionprocessor.ImageProcessor
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
@@ -23,8 +28,13 @@ import com.google.android.material.button.MaterialButton
 import java.text.SimpleDateFormat
 import java.util.*
 import com.example.startupappgro.R
+import com.google.android.material.resources.TextAppearance
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+import kotlin.math.min
+import org.tensorflow.lite.DataType
+import org.tensorflow.lite.Interpreter
+import org.tensorflow.lite.nnapi.NnApiDelegate
 
 class CameraAnimalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCameraAnimalBinding
@@ -35,7 +45,14 @@ class CameraAnimalActivity : AppCompatActivity() {
     private var imageRotationDegrees: Int = 0
     companion object{
         private const val FILENAME_FORMAT = "dd/MM/yyy/"
+        private val TAG = CameraAnimalActivity::class.java.simpleName
+
+        private const val ACCURACY_THRESHOLD = 0.5f
+        private const val MODEL_PATH = "coco_ssd_mobilenet_v1_1.0_quant.tflite"
+        private const val LABELS_PATH = "coco_ssd_mobilenet_v1_1.0_labels.txt"
     }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCameraAnimalBinding.inflate(layoutInflater)
@@ -79,7 +96,9 @@ class CameraAnimalActivity : AppCompatActivity() {
                 start()
             }
         } else {
-            getDrawable(R.drawable.ic_round_check_circle_24)
+            getDrawable(R.drawable.ic_round_check_circle_24).apply {
+                textAlignment = View.TEXT_ALIGNMENT_CENTER
+            }
         }
         icon?.let {
             icon.callback = object : Drawable.Callback{
@@ -193,6 +212,14 @@ class CameraAnimalActivity : AppCompatActivity() {
                 }
             }
         )
+    }
+    private fun reportPrediction(
+        prediction: ObjectDetectionHelper.ObjectPrediction?
+    ) = binding.viewFinder.post {
+        if (prediction == null || prediction.score < ACCURACY_THRESHOLD) {
+            return@post
+        }
+        Toast.makeText(this, prediction.label, Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
