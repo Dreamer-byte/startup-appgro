@@ -202,6 +202,7 @@
         android:insetBottom="0dp"
         android:insetTop="0dp"
         android:layout_gravity="bottom|end"
-        style="@style/Widget.Material3.FloatingActionButton.Surface"
+        android:letterSpacing="0"
+        android:textAllCaps="false"
         android:contentDescription="@string/escribir_una_publicaci_n" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
