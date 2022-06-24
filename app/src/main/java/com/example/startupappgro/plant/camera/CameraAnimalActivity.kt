@@ -1,27 +1,18 @@
-package com.example.startupappgro.animal.camera
+package com.example.startupappgro.plant.camera
 
 
 import android.content.ContentValues
-import android.content.ContentValues.TAG
 import android.graphics.Bitmap
 import android.graphics.Matrix
-import android.graphics.Paint
 import android.graphics.drawable.Drawable
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
-import android.text.Layout
 import android.util.Log
-import android.util.Size
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Adapter
-import android.widget.AdapterView
 import android.widget.Toast
-import androidx.appcompat.widget.AppCompatButton
 import androidx.camera.core.*
-import androidx.camera.extensions.internal.sessionprocessor.ImageProcessor
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -34,14 +25,9 @@ import com.example.startupappgro.R
 import com.example.startupappgro.adapter.AdapterPreviewDiagnostic
 import com.example.startupappgro.model.ModelPreviewDiagnostic
 import com.example.startupappgro.provider.ProviderPreviewDiagnostic
-import com.google.android.material.resources.TextAppearance
 import com.google.android.material.snackbar.Snackbar
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-import kotlin.math.min
-import org.tensorflow.lite.DataType
-import org.tensorflow.lite.Interpreter
-import org.tensorflow.lite.nnapi.NnApiDelegate
 import java.util.concurrent.TimeUnit
 
 class CameraAnimalActivity : AppCompatActivity() {

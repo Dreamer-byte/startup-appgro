@@ -1,4 +1,4 @@
-package com.example.startupappgro.animal.camera
+package com.example.startupappgro.plant.camera
 
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageProxy

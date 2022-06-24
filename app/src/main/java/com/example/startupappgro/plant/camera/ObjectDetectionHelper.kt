@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.startupappgro.animal.camera
+package com.example.startupappgro.plant.camera
 
 import android.graphics.RectF
 import org.tensorflow.lite.Interpreter
