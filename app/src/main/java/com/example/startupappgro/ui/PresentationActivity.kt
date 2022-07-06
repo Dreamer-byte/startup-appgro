@@ -44,7 +44,6 @@ class PresentationActivity : AppCompatActivity() {
         indicator.setViewPager(binding.viewPaper2)
     }
 
-
     private fun addToList(image: Int, title: String, details: String) {
         titleList.add(title)
         detailsList.add(details)
