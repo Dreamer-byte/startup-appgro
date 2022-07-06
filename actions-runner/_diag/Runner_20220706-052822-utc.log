@@ -1,0 +1,133 @@
+[2022-07-06 05:28:22Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.runner'
+[2022-07-06 05:28:22Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2022-07-06 05:28:22Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22000.
+[2022-07-06 05:28:22Z INFO Listener] Version: 2.294.0
+[2022-07-06 05:28:22Z INFO Listener] Commit: 709bd6113d2fca3a89a0fef11913ce4efd7b8cc5
+[2022-07-06 05:28:22Z INFO Listener] Culture: en-US
+[2022-07-06 05:28:22Z INFO Listener] UI Culture: en-US
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO Listener] Validating directory permissions for: 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO CommandLineParser] Parse
+[2022-07-06 05:28:22Z INFO CommandLineParser] Parsing 1 args
+[2022-07-06 05:28:22Z INFO CommandLineParser] parsing argument
+[2022-07-06 05:28:22Z INFO CommandLineParser] HasArgs: False
+[2022-07-06 05:28:22Z INFO CommandLineParser] Adding Command: run
+[2022-07-06 05:28:22Z INFO Listener] Arguments parsed
+[2022-07-06 05:28:22Z INFO Runner] ExecuteCommand
+[2022-07-06 05:28:22Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin\Runner.Listener.dll
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO ConfigurationStore] binPath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO ConfigurationStore] RootFolder: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.runner'
+[2022-07-06 05:28:22Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.runner
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials'
+[2022-07-06 05:28:22Z INFO ConfigurationStore] CredFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_migrated'
+[2022-07-06 05:28:22Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_migrated
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO HostContext] Well known config file 'Service': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.service'
+[2022-07-06 05:28:22Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.service
+[2022-07-06 05:28:22Z INFO CommandSettings] Flag 'help': 'False'
+[2022-07-06 05:28:22Z INFO CommandSettings] Flag 'version': 'False'
+[2022-07-06 05:28:22Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-07-06 05:28:22Z INFO CommandSettings] Flag 'check': 'False'
+[2022-07-06 05:28:22Z INFO CommandSettings] Command 'configure': 'False'
+[2022-07-06 05:28:22Z INFO CommandSettings] Command 'remove': 'False'
+[2022-07-06 05:28:22Z INFO CommandSettings] Command 'warmup': 'False'
+[2022-07-06 05:28:22Z INFO ConfigurationManager] LoadSettings
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsConfigured()
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsConfigured: True
+[2022-07-06 05:28:22Z INFO ConfigurationManager] Is configured: True
+[2022-07-06 05:28:22Z INFO ConfigurationStore] Read setting file: 303 chars
+[2022-07-06 05:28:22Z INFO ConfigurationManager] Settings Loaded
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsServiceConfigured()
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsServiceConfigured: False
+[2022-07-06 05:28:22Z INFO CommandSettings] Command 'run': 'True'
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsConfigured()
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsConfigured: True
+[2022-07-06 05:28:22Z INFO ConfigurationManager] Is configured: True
+[2022-07-06 05:28:22Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2022-07-06 05:28:22Z INFO Runner] Set runner startup type - Manual
+[2022-07-06 05:28:22Z INFO CommandSettings] Flag 'once': 'False'
+[2022-07-06 05:28:22Z INFO CommandSettings] Flag 'once': 'False'
+[2022-07-06 05:28:22Z INFO Runner] RunAsync
+[2022-07-06 05:28:22Z INFO ConfigurationManager] LoadSettings
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsConfigured()
+[2022-07-06 05:28:22Z INFO ConfigurationStore] IsConfigured: True
+[2022-07-06 05:28:22Z INFO ConfigurationManager] Is configured: True
+[2022-07-06 05:28:22Z INFO ConfigurationManager] Settings Loaded
+[2022-07-06 05:28:22Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "SANSEPI0L",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/rtjFiMnvZZkAD7TjW10cLhIgQnNXG5mtmJAXsyEeVFxokQQJjy",
+  "GitHubUrl": "https://github.com/MJackson22-bit/startup-appgro",
+  "WorkFolder": "_work"
+}
+[2022-07-06 05:28:22Z INFO MessageListener] Loading Credentials
+[2022-07-06 05:28:22Z INFO ConfigurationStore] HasCredentials()
+[2022-07-06 05:28:22Z INFO ConfigurationStore] stored True
+[2022-07-06 05:28:22Z INFO CredentialManager] GetCredentialProvider
+[2022-07-06 05:28:22Z INFO CredentialManager] Creating type OAuth
+[2022-07-06 05:28:22Z INFO CredentialManager] Creating credential type: OAuth
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:28:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:28:22Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams'
+[2022-07-06 05:28:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams
+[2022-07-06 05:28:22Z INFO MessageListener] Attempt to create session.
+[2022-07-06 05:28:22Z INFO MessageListener] Connecting to the Runner Server...
+[2022-07-06 05:28:22Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-07-06 05:28:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:28:22Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-06 05:28:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:28:22Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-06 05:28:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:28:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:28:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:28:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:28:23Z INFO MessageListener] VssConnection created
+[2022-07-06 05:28:23Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:28:23Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:28:23Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 26e69d0a-4f72-4780-815b-8891fe341531
+ActivityId: 458b8a28-c483-401a-804b-ac3ec022a5ac
+X-TFS-Session: 9eb84a93-c813-4856-84f9-a607e51e3d76
+X-VSS-E2EID: 1c6dd9f4-f755-4391-a3af-e2d9528692cf
+X-VSS-SenderDeploymentId: d8e2ca4d-fc49-4fde-de7b-4a7ca9dd6aba
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 8872BA1409D845668F05074C9571EC04 Ref B: MIA301000104029 Ref C: 2022-07-06T05:28:22Z
+Date: Wed, 06 Jul 2022 05:28:21 GMT
+
+[2022-07-06 05:28:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams
+[2022-07-06 05:28:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams
+[2022-07-06 05:28:23Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2022-07-06 05:28:23Z INFO MessageListener] Session created.
+[2022-07-06 05:28:23Z INFO Terminal] WRITE LINE: Current runner version: '2.294.0'
+[2022-07-06 05:28:23Z INFO Terminal] WRITE LINE: 2022-07-06 05:28:23Z: Listening for Jobs
+[2022-07-06 05:28:23Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2022-07-06 05:31:52Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2022-07-06 05:31:52Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/rtjFiMnvZZkAD7TjW10cLhIgQnNXG5mtmJAXsyEeVFxokQQJjy/_apis/distributedtask/pools/1/messages?sessionId=0ec2d1ec-d400-445f-a3f4-bd9fa6a14052 has been cancelled.
+[2022-07-06 05:31:52Z INFO MessageListener] Get next message has been cancelled.
+[2022-07-06 05:31:52Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
