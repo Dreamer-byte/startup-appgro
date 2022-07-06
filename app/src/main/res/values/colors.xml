@@ -9,6 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="plant">#3F6953</color>
     <color name="animal">#6C63FF</color>
-    <color name="plantDeg">#6A3F6953</color>
+    <color name="plantDeg">#AB3F6953</color>
     <color name="animalDeg">#7C6C63FF</color>
 </resources>

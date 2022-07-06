@@ -9,4 +9,13 @@
         <attr name="deltaY" format="dimension"/>
         <attr name="enable" format="boolean"/>
     </declare-styleable>
+    <declare-styleable name="ShadowContainerPurple">
+        <attr name="containerShadowColorPurple" format="color"/>
+        <attr name="containerShadowRadiusPurple" format="dimension"/>
+        <attr name="containerDeltaLengthPurple" format="dimension"/>
+        <attr name="containerCornerRadiusPurple" format="dimension"/>
+        <attr name="deltaXPurple" format="dimension"/>
+        <attr name="deltaYPurple" format="dimension"/>
+        <attr name="enablePurple" format="boolean"/>
+    </declare-styleable>
 </resources>
