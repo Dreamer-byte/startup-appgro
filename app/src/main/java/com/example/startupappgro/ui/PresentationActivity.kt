@@ -29,7 +29,6 @@ class PresentationActivity : AppCompatActivity() {
         binding.viewPaper2.adapter =
             ViewPaperAdapter(image = imageList, title = titleList, details = detailsList)
         binding.viewPaper2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        binding.viewPaper2.setPageTransformer(DepthPageTransformer())
         val indicator = binding.indicator
         binding.viewPaper2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             @RequiresApi(Build.VERSION_CODES.Q)
