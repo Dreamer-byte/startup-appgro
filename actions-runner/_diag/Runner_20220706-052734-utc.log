@@ -1,0 +1,190 @@
+[2022-07-06 05:27:34Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.runner'
+[2022-07-06 05:27:34Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2022-07-06 05:27:34Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22000.
+[2022-07-06 05:27:34Z INFO Listener] Version: 2.294.0
+[2022-07-06 05:27:34Z INFO Listener] Commit: 709bd6113d2fca3a89a0fef11913ce4efd7b8cc5
+[2022-07-06 05:27:34Z INFO Listener] Culture: en-US
+[2022-07-06 05:27:34Z INFO Listener] UI Culture: en-US
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO Listener] Validating directory permissions for: 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO CommandLineParser] Parse
+[2022-07-06 05:27:34Z INFO CommandLineParser] Parsing 5 args
+[2022-07-06 05:27:34Z INFO CommandLineParser] parsing argument
+[2022-07-06 05:27:34Z INFO CommandLineParser] HasArgs: False
+[2022-07-06 05:27:34Z INFO CommandLineParser] Adding Command: configure
+[2022-07-06 05:27:34Z INFO CommandLineParser] parsing argument
+[2022-07-06 05:27:34Z INFO CommandLineParser] HasArgs: True
+[2022-07-06 05:27:34Z INFO CommandLineParser] arg: url
+[2022-07-06 05:27:34Z INFO CommandLineParser] parsing argument
+[2022-07-06 05:27:34Z INFO CommandLineParser] HasArgs: True
+[2022-07-06 05:27:34Z INFO CommandLineParser] Adding option 'url': 'https://github.com/MJackson22-bit/startup-appgro'
+[2022-07-06 05:27:34Z INFO CommandLineParser] parsing argument
+[2022-07-06 05:27:34Z INFO CommandLineParser] HasArgs: True
+[2022-07-06 05:27:34Z INFO CommandLineParser] arg: token
+[2022-07-06 05:27:34Z INFO CommandLineParser] parsing argument
+[2022-07-06 05:27:34Z INFO CommandLineParser] HasArgs: True
+[2022-07-06 05:27:34Z INFO CommandLineParser] Adding option 'token': '***'
+[2022-07-06 05:27:34Z INFO Listener] Arguments parsed
+[2022-07-06 05:27:34Z INFO Runner] ExecuteCommand
+[2022-07-06 05:27:34Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin\Runner.Listener.dll
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO ConfigurationStore] binPath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO ConfigurationStore] RootFolder: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.runner'
+[2022-07-06 05:27:34Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.runner
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials'
+[2022-07-06 05:27:34Z INFO ConfigurationStore] CredFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_migrated'
+[2022-07-06 05:27:34Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_migrated
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:34Z INFO HostContext] Well known config file 'Service': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.service'
+[2022-07-06 05:27:34Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.service
+[2022-07-06 05:27:34Z INFO CommandSettings] Flag 'help': 'False'
+[2022-07-06 05:27:34Z INFO CommandSettings] Flag 'version': 'False'
+[2022-07-06 05:27:34Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-07-06 05:27:34Z INFO CommandSettings] Flag 'check': 'False'
+[2022-07-06 05:27:34Z INFO CommandSettings] Command 'configure': 'True'
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE: |                       
+[2022-07-06 05:27:34Z INFO Terminal] WRITE: Self-hosted runner registration
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE:                         |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-07-06 05:27:34Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-07-06 05:27:34Z INFO ConfigurationManager] ConfigureAsync
+[2022-07-06 05:27:34Z INFO ConfigurationStore] IsConfigured()
+[2022-07-06 05:27:34Z INFO ConfigurationStore] IsConfigured: False
+[2022-07-06 05:27:34Z INFO ConfigurationManager] Is configured: False
+[2022-07-06 05:27:34Z INFO CommandSettings] Arg 'url': 'https://github.com/MJackson22-bit/startup-appgro'
+[2022-07-06 05:27:34Z INFO CommandSettings] Remove url from Arg dictionary.
+[2022-07-06 05:27:34Z INFO CommandSettings] Arg 'token': '***'
+[2022-07-06 05:27:34Z INFO CommandSettings] Remove token from Arg dictionary.
+[2022-07-06 05:27:35Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2022-07-06 05:27:35Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2022-07-06 05:27:35Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-07-06 05:27:35Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:27:35Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-06 05:27:35Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:27:35Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-06 05:27:35Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:27:36Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:27:36Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:27:36Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:27:36Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:27:36Z INFO ConfigurationManager] Test Connection complete.
+[2022-07-06 05:27:36Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\bin'
+[2022-07-06 05:27:36Z INFO HostContext] Well known directory 'Root': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner'
+[2022-07-06 05:27:36Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams'
+[2022-07-06 05:27:36Z INFO RSAEncryptedFileKeyManager] Creating new RSA key using 2048-bit key length
+[2022-07-06 05:27:36Z INFO RSAEncryptedFileKeyManager] Successfully saved RSA key parameters to file C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams
+[2022-07-06 05:27:36Z INFO CommandSettings] Arg 'runnergroup': ''
+[2022-07-06 05:27:36Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-07-06 05:27:36Z INFO PromptManager] ReadValue
+[2022-07-06 05:27:36Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2022-07-06 05:27:36Z INFO Terminal] WRITE: [press Enter for Default] 
+[2022-07-06 05:27:36Z INFO Terminal] READ LINE
+[2022-07-06 05:27:56Z INFO Terminal] Read value: ''
+[2022-07-06 05:27:56Z INFO PromptManager] Falling back to the default: 'Default'
+[2022-07-06 05:27:56Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:27:56Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2022-07-06 05:27:56Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-07-06 05:27:56Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-07-06 05:27:56Z INFO CommandSettings] Arg 'name': ''
+[2022-07-06 05:27:56Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-07-06 05:27:56Z INFO PromptManager] ReadValue
+[2022-07-06 05:27:56Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-07-06 05:27:56Z INFO Terminal] WRITE: [press Enter for SANSEPI0L] 
+[2022-07-06 05:27:56Z INFO Terminal] READ LINE
+[2022-07-06 05:27:59Z INFO Terminal] Read value: ''
+[2022-07-06 05:27:59Z INFO PromptManager] Falling back to the default: 'SANSEPI0L'
+[2022-07-06 05:27:59Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:27:59Z INFO CommandSettings] Arg 'labels': ''
+[2022-07-06 05:27:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-07-06 05:27:59Z INFO PromptManager] ReadValue
+[2022-07-06 05:27:59Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-07-06 05:27:59Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-07-06 05:27:59Z INFO Terminal] READ LINE
+[2022-07-06 05:28:03Z INFO Terminal] Read value: ''
+[2022-07-06 05:28:03Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:28:03Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-07-06 05:28:03Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-07-06 05:28:03Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-07-06 05:28:03Z INFO ConfigurationStore] Saving OAuth credential @ C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials
+[2022-07-06 05:28:03Z INFO ConfigurationStore] Credentials Saved.
+[2022-07-06 05:28:03Z INFO ConfigurationStore] HasCredentials()
+[2022-07-06 05:28:03Z INFO ConfigurationStore] stored True
+[2022-07-06 05:28:03Z INFO CredentialManager] GetCredentialProvider
+[2022-07-06 05:28:03Z INFO CredentialManager] Creating type OAuth
+[2022-07-06 05:28:03Z INFO CredentialManager] Creating credential type: OAuth
+[2022-07-06 05:28:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams
+[2022-07-06 05:28:03Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-07-06 05:28:03Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:28:03Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-06 05:28:03Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:28:03Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-06 05:28:03Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-06 05:28:04Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:28:04Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:28:04Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-06 05:28:04Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: c58fe60b-875c-4972-955f-c35d7ebf110f
+ActivityId: bb291584-c04d-459c-b993-f0aa43daaee9
+X-TFS-Session: 64622667-febc-45e7-99d8-b406767316ae
+X-VSS-E2EID: 3c898d7f-b508-4033-b9f1-e1066feda391
+X-VSS-SenderDeploymentId: d8e2ca4d-fc49-4fde-de7b-4a7ca9dd6aba
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 07E9DD7555764D06BF6347108591732C Ref B: MIAEDGE2320 Ref C: 2022-07-06T05:28:03Z
+Date: Wed, 06 Jul 2022 05:28:02 GMT
+
+[2022-07-06 05:28:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams
+[2022-07-06 05:28:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Jackson\StudioProjects\startup-appgro\actions-runner\.credentials_rsaparams
+[2022-07-06 05:28:04Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2022-07-06 05:28:04Z INFO CommandSettings] Arg 'work': ''
+[2022-07-06 05:28:04Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-07-06 05:28:04Z INFO PromptManager] ReadValue
+[2022-07-06 05:28:04Z INFO Terminal] WRITE: Enter name of work folder: 
+[2022-07-06 05:28:04Z INFO Terminal] WRITE: [press Enter for _work] 
+[2022-07-06 05:28:04Z INFO Terminal] READ LINE
+[2022-07-06 05:28:08Z INFO Terminal] Read value: ''
+[2022-07-06 05:28:08Z INFO PromptManager] Falling back to the default: '_work'
+[2022-07-06 05:28:08Z INFO ConfigurationStore] Saving runner settings.
+[2022-07-06 05:28:08Z INFO ConfigurationStore] Settings Saved.
+[2022-07-06 05:28:08Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:28:08Z INFO Terminal] WRITE LINE: 
+[2022-07-06 05:28:08Z INFO CommandSettings] Flag 'runasservice': 'False'
+[2022-07-06 05:28:08Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-07-06 05:28:08Z INFO PromptManager] ReadValue
+[2022-07-06 05:28:08Z INFO Terminal] WRITE: Would you like to run the runner as service? (Y/N) 
+[2022-07-06 05:28:08Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-07-06 05:28:08Z INFO Terminal] READ LINE
+[2022-07-06 05:28:16Z INFO Terminal] Read value: ''
+[2022-07-06 05:28:16Z INFO PromptManager] Falling back to the default: 'N'
+[2022-07-06 05:28:16Z INFO Listener] Runner execution has finished with return code 0
