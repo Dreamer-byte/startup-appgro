@@ -1,5 +1,6 @@
 package com.example.startupappgro.view;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -14,28 +15,24 @@ import android.view.ViewGroup;
 
 import com.example.startupappgro.R;
 
-/**
- * @author chenjun
- * create at 2018/9/22
- */
-public class ShadowContainer extends ViewGroup {
+public class ShadowContainerPurple extends ViewGroup {
     private final float deltaLength;
     private final float cornerRadius;
     private final Paint mShadowPaint;
     private boolean drawShadow;
 
-    public ShadowContainer(Context context) {
+    public ShadowContainerPurple(Context context) {
         this(context, null);
     }
 
-    public ShadowContainer(Context context, AttributeSet attrs) {
+    public ShadowContainerPurple(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public ShadowContainer(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ShadowContainerPurple(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ShadowContainer);
-        int shadowColor = a.getColor(R.styleable.ShadowContainer_containerShadowColor, 0);
+        @SuppressLint("CustomViewStyleable") TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ShadowContainer);
+        int shadowColor = a.getColor(R.styleable.ShadowContainer_containerShadowColor, Color.YELLOW);
 //      int shadowColor = Color.RED;
         float shadowRadius = a.getDimension(R.styleable.ShadowContainer_containerShadowRadius, 0);
         deltaLength = a.getDimension(R.styleable.ShadowContainer_containerDeltaLength, 0);

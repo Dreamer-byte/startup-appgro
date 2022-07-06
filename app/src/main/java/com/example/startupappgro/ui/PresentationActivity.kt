@@ -6,15 +6,18 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.contains
 import androidx.viewpager2.widget.ViewPager2
 import com.example.startupappgro.R
 import com.example.startupappgro.adapter.ViewPaperAdapter
 import com.example.startupappgro.databinding.ActivityPresentationBinding
 import com.example.startupappgro.transformer.DepthPageTransformer
 import com.example.startupappgro.view.ShadowContainer
+import com.example.startupappgro.view.ShadowContainerPurple
 
 class PresentationActivity : AppCompatActivity() {
     private var imageList = mutableListOf<Int>()
@@ -35,15 +38,14 @@ class PresentationActivity : AppCompatActivity() {
             @SuppressLint("ResourceAsColor", "ResourceType")
             override fun onPageSelected(position: Int) {
                 if (position == 0) {
-                    Toast.makeText(this@PresentationActivity, position.toString(), Toast.LENGTH_SHORT).show()
+                    binding.shadow.setBackgroundColor(getColor(R.color.animalDeg))
                 } else if (position == 1) {
-                    Toast.makeText(this@PresentationActivity, position.toString(), Toast.LENGTH_SHORT).show()
+                    binding.shadow.setBackgroundColor(getColor(R.color.plantDeg))
                 }
             }
         })
         indicator.setViewPager(binding.viewPaper2)
     }
-
 
     private fun addToList(image: Int, title: String, details: String) {
         titleList.add(title)
